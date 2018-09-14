@@ -1,3 +1,4 @@
+<?php
 $basket = Sale\Basket::loadItemsForFUser(Sale\Fuser::getId(), Bitrix\Main\Context::getCurrent()->getSite());
 
 /** int $orderId номер заказа */
