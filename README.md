@@ -1,3 +1,1 @@
 # bitrix_functions
-
-TESTETSEtSETSETS
