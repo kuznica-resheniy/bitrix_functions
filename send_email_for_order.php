@@ -1,12 +1,12 @@
 <?
-	// $order - объект созданного заказа
+	// $order - РѕР±СЉРµРєС‚ СЃРѕР·РґР°РЅРЅРѕРіРѕ Р·Р°РєР°Р·Р°
 	$arUser = CUser::GetByID($order->getUserId());
 	$basketList = '<table>
 <tr>
-	<th>Наименование</th>
-	<th>Цена за единицу</th>
-	<th>Количество</th>
-	<th>Стоимость</th>
+	<th>РќР°РёРјРµРЅРѕРІР°РЅРёРµ</th>
+	<th>Р¦РµРЅР° Р·Р° РµРґРёРЅРёС†Сѓ</th>
+	<th>РљРѕР»РёС‡РµСЃС‚РІРѕ</th>
+	<th>РЎС‚РѕРёРјРѕСЃС‚СЊ</th>
 </tr>
 #order_list#
 </table>';
@@ -30,7 +30,7 @@
 		'EMAIL' => $arUser['EMAIL']
 	);
 	\Bitrix\Main\Mail\Event::send(array( 
-		"EVENT_NAME" => "SALE_NEW_ORDER", // - почтовое событие 
+		"EVENT_NAME" => "SALE_NEW_ORDER", // - РїРѕС‡С‚РѕРІРѕРµ СЃРѕР±С‹С‚РёРµ 
 		"LID" => SITE_ID, 
 		"C_FIELDS" => $arEmailFields 
 	));
